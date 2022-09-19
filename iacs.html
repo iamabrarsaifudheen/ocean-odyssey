@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewsFlash | Post</title>
+    <title>Ocean Odyssey | Post</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
     <!-- Remix icons -->
@@ -14,198 +14,235 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar container" id="navbar">
+<!-- Header -->
+<header class="header">
+    <nav class="navbar container" id="navbar">
+        <a href="./index.html">
+            <h2 class="logo">Ocean Odyssey</h2>
+        </a>
+        <div class="menu" id="menu">
+            <!-- <ul class="list">
+                <li class="list-item">
+                    <a href="#" class="list-link current">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Categories</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Reviews</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">News</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Membership</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Contact</a>
+                </li>
+                <li class="list-item screen-lg-hidden">
+                    <a href="./signin.html" class="list-link">Sign in</a>
+                </li>
+                <li class="list-item screen-lg-hidden">
+                    <a href="./signup.html" class="list-link">Sign up</a>
+                </li>
+            </ul> -->
+        </div>
+
+        <div class="list list-right">
+            <div class="icon-box place-items-center" id="theme-toggle-btn">
+                <i class="ri-sun-line sun-icon"></i>
+                <i class="ri-moon-line moon-icon"></i>
+            </div>
+
+            <div class="icon-box place-items-center" id="search-icon">
+                <i class="ri-search-line"></i>
+            </div>
+
+            <div class="icon-box place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                <i class="ri-menu-3-line open-menu-icon"></i>
+                <i class="ri-close-line close-menu-icon"></i>
+            </div>
+
+            <!-- <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+            <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
+                <span>Sign up</span>
+            </a> -->
+        </div>
+    </nav>
+</header>
+
+<!-- Search -->
+<!-- <div class="search-form-container container" id="search-form-container">
+    <div class="form-container">
+        <form action="" class="form">
+            <input class="form-input" type="text" placeholder="What are you looking for?">
+            <button title="Button" class="btn form-btn icon-box" type="submit">
+                <i class="ri-search-line"></i>
+            </button>
+        </form>
+        <span class="form-note">Or press ESC to close.</span>
+    </div>
+    <div class="btn form-close-btn icon-box place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+    </div>
+</div> -->
+
+<section class="blog-post section-header-offset">
+    <div class="blog-post-container container">
+        <div class="blog-post-data">
+            <h3 class="title blog-post-title">IACS</h3>
+            <div class="article-data">
+                <span>Dec 6th 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>4 Min read</span>
+            </div >
+
+        </div>
+
+        <div class="container">
+            <img src="./assets/images/trending/iacs.png" alt="" >
+            <p>The International Association of Classification Society (IACS) is a
+                non-governmental technical organization currently made up of 12
+                members of the Marine Classification Society. More than 90% of
+                the world's cargo ship tonnage meets the classification criteria set
+                by IACS member associations.
+
+
+            <h1>What is the importance of IACS?</h1>
+
+            Dedicated to the safety of ships and cleanliness of the seas, IACS
+            makes a unique contribution to maritime safety and regulation
+            through technical support, conformity verification, and research
+            and development.<br><br>
+            IACS derives from the recommendations of the 1930 International
+            Convention on Load Lines. The Convention encouraged
+            cooperation between classification societies to ensure "maximum
+            uniformity in the application of strength standards based on
+            freeboard".<br><br>
+            After the Congress in 1939 the Italian Naval Register (Registro
+            Italiano Navale, RINA) held the first meeting of a large association
+            attended by ABS, BV, DNV, GL, LR and NK, who agreed to further
+            cooperation between the associations.<br><br>
+            The second major meeting of the class society, held in 1955, led to
+            the creation of working groups on specific topics, and in 1968 IACS
+            was formed at seven major societies.<br><br>
+            IACS was founded on 11 September 1968 in Hamburg, Germany and
+            is currently headquartered in London.<br><br>
+            In 1969, the IMO granted IACS advisory status. Since then, the
+            number of members has grown to 12. DNV and GL were merged in
+            2013. The new organization was called DNVGL but was changed to
+            DNV in 2021.<br><br>
+            Although IACS is a non-governmental organization, it also plays a
+            role in the International Maritime Organization (IMO), where IACS
+            provides technical assistance and guidance and develops uniform
+            interpretations of international regulations developed by IMO
+            member countries. Once adopted, these interpretations are applied
+            by each IACS member association when verifying compliance on
+            behalf of the accrediting flag State.<br><br>
+            IACS remains in consultation with the IMO and remains the only
+            non-governmental body with an observer capacity to develop and
+            implement technical rules that reflect the goals embodied in the
+            IMO Convention. The relationship between the International
+            Maritime Regulations developed by IMO and the requirements of
+            the classification rules for hull structures and basic engineering
+            systems is codified in the International Convention on the Safety of
+            Life at Sea (SOLAS).<br><br>
+            IACS is governed by a committee, each member of which is
+            represented on the committee by a senior official. The position of
+            chairman of the council rotates annually among its members. The
+            committee reports to the General Policy Group (GPG), which is
+            made up of senior management representatives from each member
+            society. The GPG develops and implements actions that embody
+            the Commission's policies, directions and long-term plans. The GPG
+            is chaired by a member who presides over the committee. Most
+            IACS technical development work is performed by several working
+            groups (WPs) made up of technical, engineering, research, or
+            quality control personnel from member associations.
+            </p>
+            <!-- <blockquote class="quote">
+                <p><span><i class="ri-double-quotes-l"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates, laboriosam voluptatum quos non consequuntur nesciunt necessitatibus tempora quod inventore corporis rem nihil itaque, at provident minus aliquam veritatis. Labore?  <span><i class="ri-double-quotes-r"></i></span></p>
+            </blockquote> -->
+
+
+
+            <!-- <div class="author d-grid">
+                <div class="author-image-box">
+                    <img src="./assets/images/author.jpg" alt="" class="article-image">
+                </div>
+                <div class="author-about">
+                    <h3 class="author-name">John Doe</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quis repellat rerum, possimus cumque dolor repellendus eligendi atque explicabo exercitationem id.</p>
+                    <ul class="list social-media">
+                        <li class="list-item">
+                            <a href="#" class="list-link" title="ri-instagram-line"><i class="ri-instagram-line"></i></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link" title="ri-facebook-circle-line"><i class="ri-facebook-circle-line"></i></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link" title="ri-twitter-line"><i class="ri-twitter-line"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer section">
+    <div class="footer-container container d-grid">
+
+        <div class="company-data">
             <a href="./index.html">
                 <h2 class="logo">Ocean Odyssey</h2>
             </a>
-            <div class="menu" id="menu">
-                <!-- <ul class="list">
-                    <li class="list-item">
-                        <a href="#" class="list-link current">Home</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Categories</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Reviews</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">News</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Membership</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Contact</a>
-                    </li>
-                    <li class="list-item screen-lg-hidden">
-                        <a href="./signin.html" class="list-link">Sign in</a>
-                    </li>
-                    <li class="list-item screen-lg-hidden">
-                        <a href="./signup.html" class="list-link">Sign up</a>
-                    </li>
-                </ul> -->
-            </div>
-
-            <div class="list list-right">
-                <div class="icon-box place-items-center" id="theme-toggle-btn">
-                    <i class="ri-sun-line sun-icon"></i>
-                    <i class="ri-moon-line moon-icon"></i>
-                </div>
-
-                <div class="icon-box place-items-center" id="search-icon">
-                    <i class="ri-search-line"></i>
-                </div>
-
-                <div class="icon-box place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
-                    <i class="ri-menu-3-line open-menu-icon"></i>
-                    <i class="ri-close-line close-menu-icon"></i>
-                </div>
-
-                <!-- <a href="#" class="list-link screen-sm-hidden">Sign in</a>
-                <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
-                    <span>Sign up</span>
-                </a> -->
-            </div>
-        </nav>
-    </header>
-
-    <!-- Search -->
-    <div class="search-form-container container" id="search-form-container">
-        <div class="form-container">
-            <form action="" class="form">
-                <input class="form-input" type="text" placeholder="What are you looking for?">
-                <button title="Button" class="btn form-btn icon-box" type="submit">
-                    <i class="ri-search-line"></i>
-                </button>
-            </form>
-            <span class="form-note">Or press ESC to close.</span>
+            <p class="company-description">Ocean Odyssey is the educational blog of Society of Naval Architecture Students (SNAS). Here we try to break down trending topics and express our views on the same </p>
+            <ul class="list social-media">
+                <li class="list-item">
+                    <a href="#" class="list-link" title="ri-instagram-line"><i class="ri-instagram-line"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link" title="ri-facebook-circle-line"><i class="ri-facebook-circle-line"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link" title="ri-twitter-line"><i class="ri-twitter-line"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link" title="ri-pinterest-line"><i class="ri-pinterest-line"></i></a>
+                </li>
+            </ul>
+            <span class="copyright-notice">&copy;2021 Ocean Odyssey. All rights reserved.</span>
         </div>
-        <div class="btn form-close-btn icon-box place-items-center" id="form-close-btn">
-            <i class="ri-close-line"></i>
+        <div>
+            <h6 class="title footer-title">Other Links</h6>
+
+            <ul class="footer-list list">
+                <li class="list-item">
+                    <a href="#" class="list-link">DoST</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">SNAS</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">LinkedIn</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">YouTube</a>
+                </li>
+
+            </ul>
+
         </div>
+
+
     </div>
+</footer>
 
-    <section class="blog-post section-header-offset">
-        <div class="blog-post-container container">
-            <div class="blog-post-data">
-                <h3 class="title blog-post-title">IACS</h3>
-                <div class="article-data">
-                    <span>Dec 6th 2021</span>
-                    <span class="article-data-spacer"></span>
-                    <span>4 Min read</span>
-                </div >
-                <img src="./assets/images/trending/iacs.png" alt="" >
-            </div>
-
-            <div class="container">
-                <p>The International Association of Classification Society (IACS) is a non-governmental technical organization currently made up of 12 members of the Marine Classification Society. More than 90% of the world's cargo ship tonnage meets the classification criteria set by IACS member associations.
-
-                    <h1>What is the importance of IACS?</h1>
-                    
-                    Dedicated to the safety of ships and cleanliness of the seas, IACS makes a unique contribution to maritime safety and regulation through technical support, conformity verification, and research and development.
-                    
-                    IACS derives from the recommendations of the 1930 International Convention on Load Lines. The Convention encouraged cooperation between classification societies to ensure "maximum uniformity in the application of strength standards based on freeboard".
-                    
-                    After the Congress in 1939 the Italian Naval Register (Registro Italiano Navale, RINA) held the first meeting of a large association attended by ABS, BV, DNV, GL, LR and NK, who agreed to further cooperation between the associations.
-                    
-                    The second major meeting of the class society, held in 1955, led to the creation of working groups on specific topics, and in 1968 IACS was formed at seven major societies.
-                    
-                    IACS was founded on 11 September 1968 in Hamburg, Germany and is currently headquartered in London.
-                    
-                    In 1969, the IMO granted IACS advisory status. Since then, the number of members has grown to 12. DNV and GL merged in 2013. The new organization was called DNVGL but was changed to DNV in 2021.
-                    
-                    Although IACS is a non-governmental organization, it also plays a role in the International Maritime Organization (IMO), where IACS provides technical assistance and guidance and develops uniform interpretations of international regulations developed by IMO member countries. Once adopted, these interpretations are applied by each IACS member association when verifying compliance on behalf of the accrediting flag State.
-                    
-                    IACS remains in consultation with the IMO and remains the only non-governmental body with an observer capacity to develop and implement technical rules that reflect the goals embodied in the IMO Convention. The relationship between the International Maritime Regulations developed by IMO and the requirements of the classification rules for hull structures and basic engineering systems is codified in the International Convention on the Safety of Life at Sea (SOLAS).
-                    
-                    IACS is governed by a committee, each member of which is represented on the committee by a senior official. The position of chairman of the council rotates annually among its members. The committee reports to the General Policy Group (GPG), which is made up of senior management representatives from each member society. The GPG develops and implements actions that embody the Commission's policies, directions and long-term plans. The GPG is chaired by a member who presides over the committee. Most IACS technical development work is performed by several working groups (WPs) made up of technical, engineering, research, or quality control personnel from member associations.
-                    </p>
-                <!-- <blockquote class="quote">
-                    <p><span><i class="ri-double-quotes-l"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates, laboriosam voluptatum quos non consequuntur nesciunt necessitatibus tempora quod inventore corporis rem nihil itaque, at provident minus aliquam veritatis. Labore?  <span><i class="ri-double-quotes-r"></i></span></p>
-                </blockquote> -->
-            
-               
-
-                <div class="author d-grid">
-                    <div class="author-image-box">
-                        <img src="./assets/images/author.jpg" alt="" class="article-image">
-                    </div>
-                    <div class="author-about">
-                        <h3 class="author-name">John Doe</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quis repellat rerum, possimus cumque dolor repellendus eligendi atque explicabo exercitationem id.</p>
-                        <ul class="list social-media">
-                            <li class="list-item">
-                                <a href="#" class="list-link" title="ri-instagram-line"><i class="ri-instagram-line"></i></a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-link" title="ri-facebook-circle-line"><i class="ri-facebook-circle-line"></i></a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-link" title="ri-twitter-line"><i class="ri-twitter-line"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer section">
-        <div class="footer-container container d-grid">
-            
-            <div class="company-data">
-                <a href="./index.html">
-                    <h2 class="logo">Ocean Odyssey</h2>
-                </a>
-                <p class="company-description">Ocean Odyssey is the educational blog of Society of Naval Architecture Students (SNAS). Here we try to break down trending topics and express our views on the same </p>
-                <ul class="list social-media">
-                    <li class="list-item">
-                        <a href="#" class="list-link" title="ri-instagram-line"><i class="ri-instagram-line"></i></a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link" title="ri-facebook-circle-line"><i class="ri-facebook-circle-line"></i></a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link" title="ri-twitter-line"><i class="ri-twitter-line"></i></a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link" title="ri-pinterest-line"><i class="ri-pinterest-line"></i></a>
-                    </li>
-                </ul>
-                <span class="copyright-notice">&copy;2021 Ocean Odyssey. All rights reserved.</span>
-            </div>
-            <div>
-                <h6 class="title footer-title">Other Links</h6>
-                
-                <ul class="footer-list list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">DoST</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">SNAS</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">LinkedIn</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">YouTube</a>
-                    </li>
-                   
-                </ul>
-
-            </div>
-
-          
-        </div>
-    </footer>
-
-    <!-- Swiper.js -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <!-- Custom script -->
-    <script src="./assets/js/main.js"></script>
+<!-- Swiper.js -->
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<!-- Custom script -->
+<script src="./assets/js/main.js"></script>
 </body>
 </html>

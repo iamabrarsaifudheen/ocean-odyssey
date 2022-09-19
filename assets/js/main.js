@@ -2,7 +2,7 @@
 const selectElement = (selector) => {
     const element = document.querySelector(selector);
     if(element) return element;
-    throw new Error(`Something went wrong! Make sure that ${selector} exists/is typed correctly.`);  
+    throw new Error(`Something went wrong! Make sure that ${selector} exists/is typed correctly.`);
 };
 
 //Nav styles on scroll
@@ -80,11 +80,11 @@ const swiper = new Swiper(".swiper", {
     breakpoints: {
         // 700px and up shoes 2 slides
         700: {
-          slidesPerView: 2
+            slidesPerView: 2
         },
         // 1200px and up shoes 3 slides
         1200: {
             slidesPerView: 3
         }
-    }   
+    }
 });
