@@ -1,34 +1,111 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<head>
+    <style>
+        .bg{
+            width: 100%;
+            height:auto;
+            min-height:100vh;
+            background-image:url(http://i.imgur.com/w16HASj.png);
+            background-size: 100% 100%;
+            background-position: top center;
+        }
 
-<div class="container contact-form">
-    <div class="contact-image">
-        <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+        .content{
+            margin-top: 20%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .InputStyle{
+            border-radius: 25px;
+            border: solid 1px white;
+            background: transparent;
+            width: 300px;
+            padding: 10px 20px;
+        }
+
+
+
+        input,input::-webkit-input-placeholder {
+            font-size: 12px;
+            color:white;
+        }
+
+        .social-btn{
+            position: absolute;
+            bottom: 20px;
+            left: 47%;
+        }
+
+        i{
+            padding:5px;
+            color:white;
+
+        }
+
+        input, input:focus{
+            border: solid 1px white;
+            outline:0;
+            -webkit-appearance:none;
+            box-shadow: nones;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+
+        .secondLine{
+            font-weight: 350;
+            font-size:15px;
+            /*margin-bottom: 15%;*/
+            color: white;
+            font-family: Calibri;
+
+        }
+
+        .firstLine{
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            font-family: Calibri;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .firstLine{
+                font-size: 20px;
+            }
+        }
+
+        ::placeholder {
+            color: white;
+            opacity: 1;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+<!--Div for Background-->
+<form class="bg text-center">
+
+    <!--Div for Centered Text & Input-->
+    <div class="centered">
+
+        <p class="firstLine"> Post your content. </p>
+
+        <p class="secondLine">Input the title and the content</p>
+
+        <p> <input class="InputStyle" placeholder="Title" id="postTitle" style="font-size: 1rem" type="text" required> </p>
+
+        <p> <textarea rows="7" cols="20" class="InputStyle" placeholder="Content" id="postContent" style="font-family: Calibri, FontAwesome" type="text" required ></textarea> </p>
+
+        <p><input type="file" style="border: 1px solid white; border-radius: 1em; width: 300px" placeholder="Image" id="postImage" accept="image/*"></p>
+
+        <p><input type="submit" class="InputStyle" style="color: white"></p>
     </div>
-    <form method="post">
-        <h3>Post new content</h3>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" name="txtName" class="form-control" placeholder="Title *" value="" />
-                </div>
-<!--                <div class="form-group">-->
-<!--                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />-->
-<!--                </div>-->
-<!--                <div class="form-group">-->
-<!--                    <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />-->
-<!--                </div>-->
-                <div class="form-group">
-                    <input type="submit" name="btnSubmit" class="btnContact" value="Submit" />
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <textarea name="txtMsg" class="form-control" placeholder="Content *" style="width: 100%; height: 150px;"></textarea>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
+
+</form>
+
+</body>
