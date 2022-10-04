@@ -83,6 +83,19 @@
             opacity: 1;
             font-size: 1rem;
         }
+
+        .alert{
+            width: 100%;
+            background: darkgreen;
+            border-radius: 1rem;
+            padding: 0.1rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            text-align: center;
+            font-family: Calibri;
+            color: white;
+            display: none;
+        }
     </style>
 </head>
 
@@ -104,6 +117,8 @@
         <p><input type="file" style="border: 1px solid white; border-radius: 1em; width: 300px" placeholder="Image" id="postImage" accept="image/*"></p>
 
         <p><input type="submit" class="InputStyle" style="color: white"></p>
+
+        <p><div class="alert">Published your post!</div></p>
     </div>
 
 </form>

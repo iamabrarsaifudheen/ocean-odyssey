@@ -1,7 +1,3 @@
-// import firebase from "firebase/compat";
-import { initializeApp } from "firebase/app";
-
-
 const firebaseConfig = {
     apiKey: "AIzaSyC29ekIIMX5cDgbqNpsmVPv8ZCz2v3GOj8",
     authDomain: "ocean-odyssey.firebaseapp.com",
@@ -13,7 +9,7 @@ const firebaseConfig = {
     measurementId: "G-Y8DTFXH8RQ"
 };
 
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 const dB = firebase.database().ref('ocean-odyssey');
 
@@ -21,12 +17,31 @@ document.getElementById('postDB').addEventListener('submit', submitForm);
 
 function submitForm(e){
     e.preventDefault();
-    var postTitle = getElementVal(postTitle);
-    var postContent = getElementVal(postContent);
-    var postImage = getElementVal(postImage);
-    console.log(postTitle,postContent);
+    var postTitle = getElementVal("postTitle");
+    var postContent = getElementVal("postContent");
+    var postImage = getElementVal("postImage");
+    console.log(postTitle,postContent, postImage);
+
+    savePost(postTitle,postContent, postImage);
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(() => {
+        document.querySelector('.alert').style.display = 'none';
+    }, 4000);
+
+    document.getElementById('postDB').reset();
+}
+
+const savePost = (postTitle,postContent, postImage) => {
+    var newDB = dB.push();
+
+    newDB.set({
+        title: postTitle,
+        content: postContent,
+        image: postImage,
+    })
 }
 
 const getElementVal = (id) => {
-    return document.getElementById(id);
+    return document.getElementById(id).value;
 }
