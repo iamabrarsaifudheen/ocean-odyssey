@@ -88,7 +88,7 @@
 
 <body>
 <!--Div for Background-->
-<form class="bg text-center">
+<form class="bg text-center" id="postDB">
 
     <!--Div for Centered Text & Input-->
     <div class="centered">
@@ -99,7 +99,7 @@
 
         <p> <input class="InputStyle" placeholder="Title" id="postTitle" style="font-size: 1rem" type="text" required> </p>
 
-        <p> <textarea rows="7" cols="20" class="InputStyle" placeholder="Content" id="postContent" style="font-family: Calibri, FontAwesome" type="text" required ></textarea> </p>
+        <p> <textarea rows="7" cols="20" class="InputStyle" placeholder="Content" id="postContent" style="font-family: Calibri, FontAwesome; color: white" type="text" required ></textarea> </p>
 
         <p><input type="file" style="border: 1px solid white; border-radius: 1em; width: 300px" placeholder="Image" id="postImage" accept="image/*"></p>
 
@@ -107,5 +107,7 @@
     </div>
 
 </form>
+<script type="module" src="assets/js/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
 </body>

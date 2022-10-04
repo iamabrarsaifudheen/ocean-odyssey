@@ -1,5 +1,6 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+// import firebase from "firebase/compat";
+import { initializeApp } from "firebase/app";
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyC29ekIIMX5cDgbqNpsmVPv8ZCz2v3GOj8",
@@ -13,5 +14,19 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
+const dB = firebase.database().ref('ocean-odyssey');
+
+document.getElementById('postDB').addEventListener('submit', submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+    var postTitle = getElementVal(postTitle);
+    var postContent = getElementVal(postContent);
+    var postImage = getElementVal(postImage);
+    console.log(postTitle,postContent);
+}
+
+const getElementVal = (id) => {
+    return document.getElementById(id);
+}
