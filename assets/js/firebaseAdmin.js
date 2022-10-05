@@ -1,3 +1,5 @@
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyC29ekIIMX5cDgbqNpsmVPv8ZCz2v3GOj8",
     authDomain: "ocean-odyssey.firebaseapp.com",
@@ -13,6 +15,8 @@ firebase.initializeApp(firebaseConfig);
 
 const dB = firebase.database().ref('ocean-odyssey');
 
+// For Admin Panel
+
 document.getElementById('postDB').addEventListener('submit', submitForm);
 
 function submitForm(e){
@@ -20,7 +24,6 @@ function submitForm(e){
     var postTitle = getElementVal("postTitle");
     var postContent = getElementVal("postContent");
     var postImage = getElementVal("postImage");
-    console.log(postTitle,postContent, postImage);
 
     savePost(postTitle,postContent, postImage);
     document.querySelector('.alert').style.display = 'block';
